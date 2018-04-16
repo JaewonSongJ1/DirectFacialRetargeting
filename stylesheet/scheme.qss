@@ -1,0 +1,92 @@
+QWidget
+{
+    background-color : rgb(27, 28, 30);
+    color : rgb(202, 207, 210);
+}
+
+QWidget:disabled
+{
+    color : rgb(112, 117, 120);
+}
+
+QWidget#InterpolateIt
+{
+    background-color : rgb(12, 13, 15);
+}
+
+
+
+QLineEdit
+{
+    border-style: none;
+    font-size: 16px;
+}
+
+QPushButton
+{
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 rgb(53, 57, 60), stop:1 rgb(33, 34, 36));
+    shadow : rgb(9, 10, 12);
+    border: 2px solid rgb(9, 10, 12);
+    border-radius: 5px;
+    padding-top : 0px;
+    padding-bottom : 0px;
+    padding-left : 10px;
+    padding-right : 10px;
+    color : rgb(202, 207, 210);
+    height : 20px;
+    width : 60px;
+}
+
+QPushButton:disabled
+{
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 rgb(33, 37, 40), stop:1 rgb(13, 14, 16));
+}
+
+QPushButton:hover
+{
+    color : rgb(0, 255, 0);
+}
+
+QPushButton:pressed,
+QPushButton:on
+{
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 rgb(20, 21, 23), stop:1 rgb(48, 49, 51));
+    padding-top : 2px;
+    color : rgb(  0, 255,   0);
+}
+
+QPushButton#roundedButton
+{
+    border-radius: 10px;
+}
+
+QSlider
+{
+    height: 24;
+}
+
+QSlider::groove:horizontal
+{
+    border : 1px solid rgb(9, 10, 12);
+    border-radius: 11px;
+    background: rgb(9,  10,  12);
+}
+
+QSlider::handle:horizontal
+{
+    border : 2px solid rgb(9, 10, 12);
+    border-radius: 11px;
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 rgb(53, 57, 60), stop:1 rgb(33, 34, 36));
+    width: 18;
+}
+
+QSlider::handle:horizontal:disabled
+{
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 rgb(33, 37, 40), stop:1 rgb(13, 14, 16));
+}
+
+QSlider::handle:horizontal:hover,
+QSlider::handle:horizontal:pressed
+{
+    border : 2px solid rgb(0, 255, 0);
+}
